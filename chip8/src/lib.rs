@@ -475,7 +475,6 @@ mod tests {
 
         chip.key_down(5);
         chip.step().expect("emulation error");
-        chip.step().expect("emulation error");
         assert_eq!(chip.pc, 0x204);
 
         chip.key_up(5);
